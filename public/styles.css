@@ -1,0 +1,114 @@
+/* Josh's Custom CSS Reset https://www.joshwcomeau.com/css/custom-css-reset/ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+*:not(dialog) {
+  margin: 0;
+}
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* body */
+body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  background-color: #121212;
+  color: white;
+  font-family: sans-serif;
+  max-width: 1200px;
+  margin: 16px auto;
+}
+
+/* nav, content, footer */
+nav,
+.content,
+footer {
+  background-color: #252525;
+  border-radius: 16px;
+  padding: 8px 16px;
+}
+
+/* nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  column-gap: 16px;
+  list-style-type: none;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #1cde92;
+}
+
+/* content */
+
+/* page */
+hr {
+  border: 1px solid #4f4f4f;
+}
+.page-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  padding: 8px 0; 
+}
+
+/* footer */
+footer {
+  text-align: center;
+}
